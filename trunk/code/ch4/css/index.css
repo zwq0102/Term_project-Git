@@ -297,7 +297,7 @@
     line-height:40px;
     margin-top:10px ;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 300px;
     text-indent: 24px;
     color: #ff6700;
     background-color:rgb(255, 255, 255);
@@ -401,6 +401,27 @@
     height: 450px;
     background-color#f9f9f9;
 }
+
+.ebooks .left-box .content .ads .top-img{
+    width: 263px;
+    height: 290px;
+}
+.ebooks .left-box .content .ads .bottom-text{
+    height: 160px;
+    width: 236px;
+}
+.ebooks .left-box .content .ads .bottom-text ul {
+    width: 235px;
+    height:160px ;
+    margin-left: 1px;
+}
+.ebooks .left-box .content .ads .bottom-text ul li{
+    float: left;
+    width: 78px;
+    height: 40px;
+    line-height:40px ;
+    text-indent: 5px;
+}
 /*右侧图书列表*/
 .ebooks .left-box .content  .ebooks-list{
     width: 670px;
@@ -414,16 +435,51 @@
     background-color: white;
     margin-left: 2px;
     margin-bottom: 2px;
+    text-align: center;
 }
+.ebooks .left-box .content .ebooks-list ul li p{
+    text-align:left;
+    text-indent: 10px;
+}
+.ebooks .left-box .content .ebooks-list ul li p:first-child{
+    font-size:18px;
+}
+.ebooks .left-box .content .ebooks-list ul li img{
+    margin:15px auto ;
+}
+.ebooks .left-box .content .ebooks-list ul li p:not(:first-child){
+    color: red;
+}
+.ebooks .left-box .content .ebooks-list ul li p:last-child{
+    font-size: 18px;
+}
+.ebooks .left-box .content .ebooks-list ul li:not(:first-child ){
+
+}
+/*一个特别的li 将来要的轮播容器*/
+.ebooks .left-box .content .ebooks-list ul li:first-child{
+    width: 332px;
+}
+
+
 /*右侧盒子*/
 .ebooks .right-box{
     width: 286px;
-    height: 496px;
-    background-color:rgb(241, 26, 177);
- 
+    height: 456px;
+    margin-top: 40px;
+    border: 2px solid #ccc;
+
+    /*变为怪异盒子*/
+    box-sizing: border-box;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
 }
+.ebooks .right-box .title{
+    text-align: center;
 /***********6.服装************************/
 .clothes {
+    margin-top:30px;
     height: 500px;
     background-color: rgb(4, 68, 2);
 }

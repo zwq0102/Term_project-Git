@@ -68,11 +68,9 @@
 
 .nav {
     height: 80px;
-    background-color: #fff;
+    background-color:white;
 }
-
-
-/*********************搜索购物车订单大容器*********************/
+/*搜索购物车订单大容器**/
 
 .nav .search-shopcart-order {
     margin-top: 5px;
@@ -205,7 +203,7 @@
     width: 1000px;
     height: 30px;
 }
-
+/*到了li*/
 .nav .category-menu ul li {
     float: left;
     height: 30px;
@@ -218,19 +216,16 @@
 }
 
 
-/*3.分类导航和banner*/
-
+/*****************3.分类导航和banner*********************/
 .menu {
     height: 430px;
-
 }
-
+/*左侧导航*/
 .menu .sideMenu {
     height: 430px;
     width: 200px;
-    background-color: red;
 }
-
+/*导航列表*/
 .menu .sideMenu ul {
     height: 430px;
     width: 200px;
@@ -238,53 +233,53 @@
     position: relative;
     border-top: 2px solid #ff6700;
 }
-
+/*导航li*/
 .menu .sideMenu ul li {
     height: 30px;
     line-height: 30px;
     width: 200px;
     text-indent: 20px;
 }
-
+/*导航下的a 标签*/
+.menu .sideMenu ul li a{
+	color:black;
+	text-decoration: none;
+}
+/*导导航li激活效果*/
 .menu .sideMenu ul li:hover {
     background-color: #fff;
 }
-
+/*li激活下的a标签样式*/
 .menu .sideMenu ul li:hover a {
     color: #ff6700;
 }
-
+/*一级导航标题*/
 .menu .sideMenu ul li .title {
     width: 200px;
     height: 30px;
     line-height: 30px;
 }
-
+/*li激活下一集导航标题*/
 .menu .sideMenu ul li:hover .title {
     background-color: #fff;
     position: absolute;
     z-index: 99;
 }
-
-.menu .sideMenu ul li a {
-    color: #353535;
-    text-decoration: none;
-}
-
-.menu .sideMenu ul li .subMenu {
-    position: absolute;
-    left: 198px;
-    top: 0;
-    border: 2px solid #ff6700;
-    width: 500px;
-    height: 426px;
-    display: none;
-}
+/*激活显示的二级菜单*/
 
 .menu .sideMenu ul li:hover .subMenu {
     display: block;
 }
-
+.menu .sideMenu ul li .subMenu {
+    position: absolute;
+    top:0px;
+    left:198px;
+    border:2px solid #d7f81c;
+    width: 500px;
+    height: 426px;
+    display: none;
+	
+}
 .menu .banner {
     height: 430px;
     width: 1000px;
@@ -294,24 +289,143 @@
 /**********4.今日推介********/
 
 .recommend {
-    height: 500px;
-    background-color: #ccc;
+    height: 544px;
 }
-
-
+.recommend  .title{
+    width: 1200px;
+    height: 40px;
+    line-height:40px;
+    margin-top:10px ;
+    font-size: 24px;
+    font-weight: 300;
+    text-indent: 24px;
+    color: #ff6700;
+    background-color:rgb(255, 255, 255);
+    border-bottom:6px solid #ff6700;
+}
+/*推荐内容*/
+.recommend .recommend-content{
+    width: 1190px;
+    height: 498px;
+    margin: 0 auto;
+}
+/*列表容器*/
+.recommend .recommend-content ul{
+    width: 1190px;
+    height: 498px;
+    margin: 0 auto;
+    background-color:#ff6700;
+}
+/*推荐列表li*/
+.recommend .recommend-content ul li{
+    width: 196px;
+    height: 247px;
+    background-color: #fff;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+/*整体居中*/
+.recommend .recommend-content ul li {
+    text-align: center;
+}
+/*p标签样式*/
+.recommend .recommend-content ul li p{
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+}
+/*限时*/
+.recommend .recommend-content ul li p.limit-time {
+   text-align:left;
+   text-indent: 0;
+}
+/*全国联保*/
+.recommend .recommend-content ul li p.text{
+    color:red;
+}
+/*价格*/
+.recommend .recommend-content ul li p.price{
+    color:red;
+    font-size:20px;
+    margin-top: 5px;
+    font-weight:100px;
+}
 /***********5.电子书***************/
-
 .ebooks {
-    height: 500px;
-    background-color: rgb(80, 23, 23);
+    height: 496px;
+    margin-top: 34px;
+}
+/*左侧盒子*/
+.ebooks .left-box{
+    width: 906px;
+    height: 496px;
 }
 
-
-/***********6.服装****************/
-
+/*顶部*/
+.ebooks .left-box .top{
+    width: 906px;
+    height:40px;
+    line-height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 6px solid #ff6700;
+}
+/*标题*/
+.ebooks .left-box .top .title{
+    text-indent: 24px;
+    font-size: 24px;
+    font-weight: 300px;
+    color: #ff6700;
+}
+/*右侧标题导航*/
+.ebooks .left-box .top ul li{
+    float: left;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+}
+/*右侧激活类*/
+.ebooks .left-box .top ul li.active{
+    background-color:#ff6700;
+    color: #fff;
+}
+/*下部分内容*/
+.ebooks .left-box .content{
+    height: 450px;
+    width:906px;
+    background-color:white;
+}
+/*左侧广告*/
+.ebooks .left-box .content .ads{
+    width: 236px;
+    height: 450px;
+    background-color#f9f9f9;
+}
+/*右侧图书列表*/
+.ebooks .left-box .content  .ebooks-list{
+    width: 670px;
+    height: 450px;
+    background-color:#ccc;
+}
+.ebooks .left-box .content .ebooks-list ul li{
+    float: left;
+    height: 223px;
+    width: 165px;
+    background-color: white;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+/*右侧盒子*/
+.ebooks .right-box{
+    width: 286px;
+    height: 496px;
+    background-color:rgb(241, 26, 177);
+ 
+}
+/***********6.服装************************/
 .clothes {
     height: 500px;
-    background-color: #444;
+    background-color: rgb(4, 68, 2);
 }
 
 
