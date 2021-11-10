@@ -470,13 +470,23 @@
     border: 2px solid #ccc;
 
     /*变为怪异盒子*/
-    box-sizing: border-box;
-    height: 36px;
-    line-height: 36px;
-    font-size: 24px;
+    box-sizing: border-box; 
 }
 .ebooks .right-box .title{
     text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 200px;
+    color: #333;
+}
+.ebooks .right-box  ul li{
+    line-height: 57px;
+    font-size: 16px;
+    text-indent: 5px;
+   
+
+}
 /***********6.服装************************/
 .clothes {
     margin-top:30px;
